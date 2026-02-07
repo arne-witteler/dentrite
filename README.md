@@ -1,38 +1,20 @@
-# dentrite
+# 🧠 Dendrite
 
-This template should help get you started developing with Vue 3 in Vite.
+**Dein zweites Gehirn fürs Studium.**
+Dendrite ist eine moderne Vue 3 Anwendung, die Studenten hilft, ihre Module zu verwalten, Lernfortschritte zu visualisieren und Deadlines im Blick zu behalten. Der Name steht für die Verknüpfung von Wissen – genau wie im menschlichen Gehirn.
 
-## Recommended IDE Setup
+Das Design-Ziel ist ein **"Clean UI"** Ansatz: Ablenkungsfrei, ästhetisch und mit flüssigen Animationen (Micro-Interactions).
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## 🚧 Aktueller Projektstatus
 
-## Recommended Browser Setup
+Das Grundgerüst der Anwendung steht. Wir befinden uns aktuell in der **UI/UX-Phase**, in der die Kern-Komponenten und das Layout finalisiert werden, bevor die Datenlogik (Pinia Store) implementiert wird.
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+**Bereits implementiert:**
+* ✅ **Tech Stack:** Vue 3, Vite, Vue Router, Tailwind CSS & Lucide Icons.
+* ✅ **Atomic Design:** Saubere Trennung in Atoms, Molecules und Organisms.
+* ✅ **Navigation:** Eine voll animierte "Sliding Pill" Navbar mit `getBoundingClientRect` für pixel-perfekte Animationen.
 
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
+**Nächste Schritte:**
+* 🔲 **Pinia Store:** Ablösung der Mock-Daten durch ein zentrales State Management.
+* 🔲 **Modul-Erstellung:** Funktionalität für den "Add Button" (Modal/Formular).
+* 🔲 **Detailansichten:** Einzelansicht für Module mit Aufgaben und Notizen.
