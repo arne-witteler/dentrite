@@ -1,7 +1,7 @@
-# 🧠 Dendrite
+# 🧠 Wurzel
 
 **Dein zweites Gehirn fürs Studium.**
-Dendrite ist eine Web-Applikation, die Studenten hilft, Module zu organisieren und Lernfortschritte zu verfolgen. Der Fokus liegt aktuell auf einer soliden Architektur und Skalierbarkeit.
+Wurzel ist eine Web-Applikation, die Studenten hilft, Module zu organisieren und Lernfortschritte zu verfolgen. Der Fokus liegt aktuell auf einer soliden Architektur und Skalierbarkeit.
 
 ## 🚧 Projektstatus
 
