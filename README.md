@@ -1,20 +1,43 @@
 # 🧠 Dendrite
 
 **Dein zweites Gehirn fürs Studium.**
-Dendrite ist eine moderne Vue 3 Anwendung, die Studenten hilft, ihre Module zu verwalten, Lernfortschritte zu visualisieren und Deadlines im Blick zu behalten. Der Name steht für die Verknüpfung von Wissen – genau wie im menschlichen Gehirn.
+Dendrite ist eine Web-Applikation, die Studenten hilft, Module zu organisieren und Lernfortschritte zu verfolgen. Der Fokus liegt aktuell auf einer soliden Architektur und Skalierbarkeit.
 
-Das Design-Ziel ist ein **"Clean UI"** Ansatz: Ablenkungsfrei, ästhetisch und mit flüssigen Animationen (Micro-Interactions).
+## 🚧 Projektstatus
 
-## 🚧 Aktueller Projektstatus
+Das Projekt befindet sich in der **Aufbauphase (Foundation)**.
+Wir haben einen "Clean Slate" Ansatz gewählt, um modernste Web-Standards (Vue 3 Composition API, Tailwind 4) mit einer strikten Atomic Design Struktur zu vereinen.
 
-Das Grundgerüst der Anwendung steht. Wir befinden uns aktuell in der **UI/UX-Phase**, in der die Kern-Komponenten und das Layout finalisiert werden, bevor die Datenlogik (Pinia Store) implementiert wird.
+**Aktueller Stand:**
+* ✅ **Basis-Setup:** Vue 3 + Vite + Tailwind CSS 4.
+* ✅ **UI Framework:** PrimeVue (für Basis-Komponenten).
+* ✅ **Architektur:** Strikte Trennung nach Atomic Design (Atoms → Templates → Pages).
+* ✅ **Routing:** Unterscheidung zwischen Public (Landing) und Private (App) Bereich.
 
-**Bereits implementiert:**
-* ✅ **Tech Stack:** Vue 3, Vite, Vue Router, Tailwind CSS & Lucide Icons.
-* ✅ **Atomic Design:** Saubere Trennung in Atoms, Molecules und Organisms.
-* ✅ **Navigation:** Eine voll animierte "Sliding Pill" Navbar mit `getBoundingClientRect` für pixel-perfekte Animationen.
+## 🛠 Tech Stack
 
-**Nächste Schritte:**
-* 🔲 **Pinia Store:** Ablösung der Mock-Daten durch ein zentrales State Management.
-* 🔲 **Modul-Erstellung:** Funktionalität für den "Add Button" (Modal/Formular).
-* 🔲 **Detailansichten:** Einzelansicht für Module mit Aufgaben und Notizen.
+| Technologie        | Version / Typ               |
+| :----------------- | :-------------------------- |
+| **Vue 3**          | Framework (Composition API) |
+| **Vite**           | Build Tool                  |
+| **Tailwind CSS 4** | Styling                     |
+| **PrimeVue**       | UI Library                  |
+| **Pinia**          | State Management            |
+
+## 📂 Projektstruktur
+
+Die Struktur folgt dem **Atomic Design** Prinzip. [cite_start]Wir nutzen **Templates** statt klassischer Layouts, um den Seitenrahmen zu definieren.
+
+```text
+src/
+├── assets/          # Globale Styles (main.css)
+├── components/      # UI Bausteine nach Atomic Design
+│   ├── atoms/       # Kleinste Einheiten (Buttons, Icons)
+│   ├── molecules/   # Zusammengesetzt (Formularfelder, Cards)
+│   ├── organisms/   # Komplex (Sidebar, Header)
+│   └── templates/   # Seiten-Gerüste (AppTemplate, AuthTemplate)
+├── pages/           # Die eigentlichen Views
+│   ├── LandingPage.vue    # Öffentliche Startseite
+│   └── DashboardPage.vue  # Interner App-Bereich
+├── router/          # Routing Konfiguration
+└── stores/          # Pinia Stores (Datenhaltung)
