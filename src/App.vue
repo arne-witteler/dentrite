@@ -1,12 +1,7 @@
 <script setup>
-import { RouterView } from 'vue-router'
-import AppSidebar from './components/organisms/AppSideBar.vue';
+import { RouterView } from 'vue-router';
 </script>
 
 <template>
-  <div class="min-h-screen bg-gray-50">
-    <main>
-      <RouterView />
-    </main>
-  </div>
+  <RouterView />
 </template>
